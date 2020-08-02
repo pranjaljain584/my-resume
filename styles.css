@@ -495,24 +495,30 @@ button:focus{
 
 
 .list{
-	visibility: hidden;
+	/* visibility: hidden; */
 	display: block;
 	min-width: 120px;
 	width: auto;
 	height: auto;
 	position: absolute;
 	list-style: none;
-	z-index: 2;
+	/* z-index: 2; */
 	background-color: grey;
 	padding-left: 0px;
 	margin-left: -10%;
 }
 
-.dropdown:focus .list{
-    visibility: visible;
+.drop-div{
+	/* visibility: hidden; */
+	display: none;
+	z-index: 2;
 }
 
-.list:target {
+.dropdown:focus .drop-div{
+	display: block;
+}
+
+.drop-div:target {
 	visibility: visible;
 }
 
@@ -522,11 +528,14 @@ button:focus{
 	padding: 5px;
 	color: white;
 	font-size: 1rem;
-	margin-left: 20%;
-	padding-left: 0;
+	padding-left: 20%;
 	margin-bottom: 5px;
 	display: block;
 	text-align: left;
+}
+
+.list-item:hover{
+	background-color: black;
 }
 
 
