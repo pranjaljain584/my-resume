@@ -175,7 +175,7 @@ button:focus{
 }
 
 .percent{
-	width: 85% ;
+	width: 60%;
 	height:inherit;
 	box-shadow: 1px 0px 2px 0px grey ;
 }
